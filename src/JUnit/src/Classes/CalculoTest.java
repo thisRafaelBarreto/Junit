@@ -32,4 +32,18 @@ class CalculoTest {
 		
 		assertEquals(retornoEsperado, retorno);
 	}
+	
+	@Test
+	void testExecutaDivisao()
+	{
+		float valor1 = 10;
+		float valor2 = 5;
+		float retornoEsperado = 2;
+		
+		Calculo c = new Calculo();
+		
+		float retorno = c.divisao(valor1, valor2);
+		
+		assertEquals(retornoEsperado, retorno);
+	}
 }
